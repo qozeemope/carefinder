@@ -17,10 +17,10 @@ function Navbar() {
           </li>
         </ul>
         <div className="flex items-center gap-[1vw]  text-white  ">
-          <button className="bg-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:bg-opacity-75 ">
+          <button className="border-[2px] border-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:opacity-90 text-[#08299B] ">
             Login
           </button>
-          <button className="bg-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:bg-opacity-75 ">
+          <button className="bg-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:bg-opacity-90 ">
             Sign Up
           </button>
         </div>
