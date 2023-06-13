@@ -31,6 +31,13 @@ function Testimonials() {
       name: "Emily T.",
       img: emily,
     },
+    {
+      id: 4,
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.  ",
+      star: 5,
+      name: "Jaime L.",
+      img: jon,
+    },
   ];
   return (
     <div className="mt-[9.63vh] mb-[13.61vh] ">
@@ -40,28 +47,93 @@ function Testimonials() {
       <h2 className="text-[#08299B] font-medium text-center text-5xl mb-[8vh] ">
         What Our Users Say
       </h2>
-      <div className="flex w-full items-center justify-center gap-[5.10vw] ">
-        {testimonials.map((testimonial) => (
-          <div className="testimonial bg-[#E0E4EC] rounded-xl pt-[5.09vh] flex-col px-[3.44vw] pb-[3.40vh] w-[30.13vw] h-[40.46vh] ">
-            <p className="text-xs text-justify font-medium h-[20vh]">
-              {testimonial.content}
-            </p>
-            <div className="flex gap-1">
-              {Array.from({ length: testimonial.star }).map((_, index) => (
-                <img
-                  key={index}
-                  src={star}
-                  alt=""
-                  className="w-[1.25vw] h-[1.25vw] "
-                />
-              ))}
+      <div className="w-full overflow-hidden mx-auto relative carousel ">
+        <div className="flex  items-center justify-center gap-[5.10vw] carousel-inner ">
+          {testimonials.map((testimonial) => (
+            <div className="testimonial bg-[#E0E4EC] rounded-xl pt-[5.09vh] flex-col px-[3.44vw] pb-[3.40vh] min-w-[30.13vw] h-[40.46vh] ">
+              <p className="text-xs text-justify font-medium h-[20vh]">
+                {testimonial.content}
+              </p>
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.star }).map((_, index) => (
+                  <img
+                    key={index}
+                    src={star}
+                    alt=""
+                    className="w-[1.25vw] h-[1.25vw] "
+                  />
+                ))}
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src={testimonial.img} alt="" className="rounded-full" />
+                <h4 className="text-sm font-medium">{testimonial.name} </h4>
+              </div>
             </div>
-            <div className="flex items-center gap-4 mt-4">
-              <img src={testimonial.img} alt="" className="rounded-full" />
-              <h4 className="text-sm font-medium">{testimonial.name} </h4>
+          ))}
+          {testimonials.map((testimonial) => (
+            <div className="testimonial bg-[#E0E4EC] rounded-xl pt-[5.09vh] flex-col px-[3.44vw] pb-[3.40vh] min-w-[30.13vw] h-[40.46vh] ">
+              <p className="text-xs text-justify font-medium h-[20vh]">
+                {testimonial.content}
+              </p>
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.star }).map((_, index) => (
+                  <img
+                    key={index}
+                    src={star}
+                    alt=""
+                    className="w-[1.25vw] h-[1.25vw] "
+                  />
+                ))}
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src={testimonial.img} alt="" className="rounded-full" />
+                <h4 className="text-sm font-medium">{testimonial.name} </h4>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+          {testimonials.map((testimonial) => (
+            <div className="testimonial bg-[#E0E4EC] rounded-xl pt-[5.09vh] flex-col px-[3.44vw] pb-[3.40vh] min-w-[30.13vw] h-[40.46vh] ">
+              <p className="text-xs text-justify font-medium h-[20vh]">
+                {testimonial.content}
+              </p>
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.star }).map((_, index) => (
+                  <img
+                    key={index}
+                    src={star}
+                    alt=""
+                    className="w-[1.25vw] h-[1.25vw] "
+                  />
+                ))}
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src={testimonial.img} alt="" className="rounded-full" />
+                <h4 className="text-sm font-medium">{testimonial.name} </h4>
+              </div>
+            </div>
+          ))}
+          {testimonials.map((testimonial) => (
+            <div className="testimonial bg-[#E0E4EC] rounded-xl pt-[5.09vh] flex-col px-[3.44vw] pb-[3.40vh] min-w-[30.13vw] h-[40.46vh] ">
+              <p className="text-xs text-justify font-medium h-[20vh]">
+                {testimonial.content}
+              </p>
+              <div className="flex gap-1">
+                {Array.from({ length: testimonial.star }).map((_, index) => (
+                  <img
+                    key={index}
+                    src={star}
+                    alt=""
+                    className="w-[1.25vw] h-[1.25vw] "
+                  />
+                ))}
+              </div>
+              <div className="flex items-center gap-4 mt-4">
+                <img src={testimonial.img} alt="" className="rounded-full" />
+                <h4 className="text-sm font-medium">{testimonial.name} </h4>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
