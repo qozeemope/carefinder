@@ -4,7 +4,7 @@ import right from "../../assets/hero-section/right.png";
 
 function HeroSection() {
   return (
-    <div className="bg-[#E0E4EC] w-full h-[87.69vh] pt-[9.81vh] pl-[2vw] ">
+    <div className="w-full h-[87.69vh] pt-[9.81vh]  pl-[2vw] ">
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-center">
           <h1 className="text-[#08299B] font-bold text-4xl text-center mb-[2.31vh] ">

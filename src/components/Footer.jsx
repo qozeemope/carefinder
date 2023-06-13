@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[#E0E4EC] flex  justify-between py-[3.5vh] pl-[6.46vw] pr-[4.84vw] ">
+    <div className=" text-white flex  justify-between py-[3.5vh] pl-[6.46vw] pr-[4.84vw] ">
       <div className="mr-[19.43vw] w-full  ">
         <h2 className="font-medium text-2xl text-[#08299B] mb-[5vh] ">
           CareFinder

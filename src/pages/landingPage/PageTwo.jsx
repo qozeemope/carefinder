@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import imgOne from "../../assets/hero-section/imgOne.svg";
 import imgTwo from "../../assets/hero-section/imgTwo.svg";
 import doctor from "../../assets/hero-section/doctor.svg";
@@ -65,9 +66,11 @@ function PageTwo() {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-[1.04vw] mb-[22.78vh] ">
+      <div className="flex items-center justify-between gap-[1.04vw] mb-[22.78vh] mx-auto w-[90%] ">
         {features.map((feature) => (
-          <div
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             key={feature.id}
             className="bg-[#E0E4EC] rounded-xl w-[20.97vw] h-[30.46vh] flex flex-col items-center pt-[1.85vh] text-center font-medium "
           >
@@ -80,7 +83,7 @@ function PageTwo() {
             </div>
             <h1 className="mb-[4vh] ">{feature.title}</h1>
             <p className="text-sm">{feature.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="flex items-center justify-center object-cover mb-[21.90vh] ">
