@@ -26,7 +26,7 @@ function LandingPage() {
         <div className="bg-white">
           <Testimonials />
         </div>
-        <div className="bg-black/80">
+        <div className="bg-[#08299B] ">
           <Footer />
         </div>
       </div>

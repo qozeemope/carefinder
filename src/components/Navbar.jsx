@@ -20,7 +20,7 @@ function Navbar() {
           <button className="border-[1px] border-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:opacity-90 text-[#08299B] ">
             Login
           </button>
-          <button className="bg-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:bg-opacity-90 ">
+          <button className="bg-[#08299B] w-[7.34vw] h-[5.46vh] rounded-xl hover:bg-opacity-90  ">
             Sign Up
           </button>
         </div>
