@@ -1,12 +1,7 @@
-import RoutesObjects from "./routes";
-import { AuthProvider } from "./context/AuthContext";
-
-function App(props) {
-  return (
-    <div className=" bg-[#151828]  text-white app font-sans ">
-      <AuthProvider></AuthProvider>
-    </div>
+{
+  success && (
+    <p className="flex items-center gap-1 mb-5 font-semibold text-green-500">
+      <BsFillCheckSquareFill /> Appointment has been scheduled!
+    </p>
   );
 }
-
-export default App;

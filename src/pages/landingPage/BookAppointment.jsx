@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "../../components/Form.jsx";
 import john from "../../assets/hero-section/john.svg";
 import mary from "../../assets/hero-section/mary.svg";
 import cole from "../../assets/hero-section/cole.svg";
@@ -63,56 +64,9 @@ function BookAppointment() {
         <h1 className="font-bold text-2xl text-[#08299B] ">
           Book an appointment
         </h1>
-        <form
-          action=""
-          className="w-full flex items-center flex-col gap-[3.43vh]"
-        >
-          <input
-            type="text"
-            placeholder="Address"
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          />
-          <select
-            name=""
-            id=""
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          >
-            <option value="">Choose Hospital</option>
-          </select>
-          <select
-            name=""
-            id=""
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          >
-            <option value="">Choose Department</option>
-          </select>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          />
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          />
-          <input
-            type="date"
-            placeholder="Address"
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          />
-          <input
-            type="time"
-            placeholder="Address"
-            className="w-full bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
-          />
-          <button
-            type="submit"
-            className="bg-[#08299B] w-full h-[7.46vh] rounded-xl hover:bg-opacity-90 text-white "
-          >
-            Book Appointment Now
-          </button>
-        </form>
+        <div className="w-full">
+          <Form />
+        </div>
       </div>
     </div>
   );
