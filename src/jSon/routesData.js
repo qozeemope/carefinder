@@ -2,7 +2,7 @@ import FindHospital from "../pages/findHospital/FindHospital";
 import LandingPage from "../pages/landingPage/LandingPage";
 import Profile from "../pages/profile/Profile";
 
-const routes = [
+const routesData = [
   {
     id: 1,
     path: "/",
@@ -20,4 +20,4 @@ const routes = [
   },
 ];
 
-export default routes;
+export default routesData;

@@ -3,13 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/landingPage/LandingPage.jsx";
 
 import FindHospital from "./pages/findHospital/FindHospital.jsx";
+import Login from "./pages/auth/Login.jsx";
+import SignUp from "./pages/auth/SignUp.jsx";
+import About from "./pages/about/About.jsx";
+import AuthLayout from "./pages/auth/AuthLayout.jsx";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          {/* route1 */}
           <Route
             path="/"
             exact
@@ -24,7 +27,7 @@ function App() {
             path="/about"
             element={
               <>
-                <LandingPage />
+                <About />
               </>
             }
           />
@@ -38,6 +41,30 @@ function App() {
             }
           />
           <Route path="/find-hospital" element={<FindHospital />} />
+
+          <Route path="*" element={<h1>404 Not Found</h1>} />
+
+          <Route path="/about" element={<About />} />
+          <Route
+            path="/login"
+            element={
+              <>
+                <AuthLayout>
+                  <Login />
+                </AuthLayout>
+              </>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <>
+                <AuthLayout>
+                  <SignUp />
+                </AuthLayout>
+              </>
+            }
+          />
         </Routes>
       </Router>
     </>

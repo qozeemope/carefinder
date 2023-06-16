@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../components/Form.jsx";
+import { AppointmentForm } from "../../components/Form.jsx";
 import john from "../../assets/hero-section/john.svg";
 import mary from "../../assets/hero-section/mary.svg";
 import cole from "../../assets/hero-section/cole.svg";
@@ -65,7 +65,7 @@ function BookAppointment() {
           Book an appointment
         </h1>
         <div className="w-full">
-          <Form />
+          <AppointmentForm />
         </div>
       </div>
     </div>

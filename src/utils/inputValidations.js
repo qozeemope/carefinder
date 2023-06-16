@@ -1,17 +1,9 @@
-/*-------------------------------------------------------------------
-|  🐼 Input Validators 
-|
-|  🐯 Purpose: THIS FILE CONTAINS ALL THE VALIDATORS OBJECTS
-|
-|  🐸 Returns:  -
-*-------------------------------------------------------------------*/
-
 export const name_validation = {
   name: "name",
   label: "name",
   type: "text",
   id: "name",
-  placeholder: "write your name ...",
+  placeholder: "Enter your name ...",
   validation: {
     required: {
       value: true,
@@ -29,7 +21,7 @@ export const address_validation = {
   label: "Address",
   type: "text",
   id: "address",
-  placeholder: "enter your address ...",
+  placeholder: "Enter your address ...",
   validation: {
     required: {
       value: true,
@@ -97,7 +89,7 @@ export const email_validation = {
   label: "email address",
   type: "email",
   id: "email",
-  placeholder: "write a random email address",
+  placeholder: "Enter your email address",
   validation: {
     required: {
       value: true,

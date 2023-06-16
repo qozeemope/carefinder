@@ -22,24 +22,25 @@ export default function Input({
 
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex items-center w-full justify-between mb-2">
         <label htmlFor={id} className="font-semibold capitalize">
           {label}
         </label>
+        <AnimatePresence mode="wait" initial={false}>
+          {isInvalid && (
+            <InputError
+              message={inputError.error.message}
+              key={inputError.error.message}
+            />
+          )}
+        </AnimatePresence>
       </div>
-      <AnimatePresence mode="wait" initial={false}>
-        {isInvalid && (
-          <InputError
-            message={inputError.error.message}
-            key={inputError.error.message}
-          />
-        )}
-      </AnimatePresence>
+
       <input
         id={id}
         type={type}
         placeholder={placeholder}
-        className="w-[45vw] bg-[#E0E4EC] h-[7.46vh] rounded-lg pl-[1.45vw] "
+        className="w-[45vw] bg-[#E0E4EC] h-[7.46vh] rounded-lg px-[1.45vw] "
         {...register(name, validation)}
       />
     </div>
