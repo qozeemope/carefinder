@@ -10,10 +10,10 @@ import Footer from "../../components/Footer.jsx";
 function LandingPage() {
   return (
     <div className="relative">
-      <div className={`w-full fixed z-10 bg-[#E0E4EC] `}>
+      <div className={`w-full  bg-[#E0E4EC] `}>
         <Navbar />
       </div>
-      <div className="relative z-0 pt-[11.81vh]">
+      <div className="relative z-0 ">
         <div className="bg-[#E0E4EC]">
           <HeroSection />
         </div>

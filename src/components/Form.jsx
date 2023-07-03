@@ -26,6 +26,15 @@ export function AppointmentForm() {
     console.log(data);
     methods.reset();
     setSuccess(true);
+    toast.success("Appointment Booked!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      className: "bg-[#08299B] text-white",
+    });
   });
 
   return (
@@ -49,20 +58,10 @@ export function AppointmentForm() {
           >
             Book Appointment Now
           </button>
-
-          {success &&
-            toast.success("Appointment Booked!", {
-              position: "top-center",
-              autoClose: 2000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-              className: "bg-[#08299B] text-white",
-            })}
         </form>
-        <ToastContainer />
+        <div className="absolute top-0 right-0 z-20">
+          <ToastContainer />
+        </div>
       </FormProvider>
       {/* <div className="absolute z-20 top-0 left-0 bg-red-500 w-screen h-full "></div>
       {success && <SuccessPage />} */}
